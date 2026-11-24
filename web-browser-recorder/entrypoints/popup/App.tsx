@@ -1,24 +1,23 @@
 import { useState } from 'react';
-import Temp from "@/entrypoints/popup/temp.tsx";
 
 function App() {
-    const [page, setPage] = useState<'home' | 'temp'>('home');
-
-    if (page === 'temp') {
-        return (
-            <>
-                <button onClick={() => setPage('home')}>Back</button>
-                <Temp />
-            </>
-        );
-    }
-
     return (
         <>
-            <h1>WXT + React</h1>
-            <button onClick={() => setPage('temp')}>Go to Temp</button>
+            <h1>Gravador de Tela</h1>
+            <button
+                style={styles.buttonStyle}
+                onClick={() => {}}
+            ></button>
         </>
     );
+}
+
+const styles = {
+    buttonStyle: {
+        backgroundColor: '#637545',
+        borderRadius: '8px',
+        color: '#EBEBD8',
+    }
 }
 
 export default App;

@@ -4,7 +4,7 @@ interface RecordingStationProps {
 
 }
 
-export default function RecordingStation() {
+export function RecordingStation() {
     const [isRecording, setIsRecording] = useState(false);
     const [recordingTime, setRecordingTime] = useState(0);
 
