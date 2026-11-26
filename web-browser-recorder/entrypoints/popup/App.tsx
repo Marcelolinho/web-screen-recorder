@@ -1,23 +1,12 @@
-import { useState } from 'react';
+import { RecordingStation } from './components/recordingStation';
 
 function App() {
-    return (
-        <>
-            <h1>Gravador de Tela</h1>
-            <button
-                style={styles.buttonStyle}
-                onClick={() => {}}
-            ></button>
-        </>
-    );
-}
-
-const styles = {
-    buttonStyle: {
-        backgroundColor: '#637545',
-        borderRadius: '8px',
-        color: '#EBEBD8',
-    }
+  return (
+    <>
+      <h1>Gravador de Tela</h1>
+      <RecordingStation />
+    </>
+  );
 }
 
 export default App;
